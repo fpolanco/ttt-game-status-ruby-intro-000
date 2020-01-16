@@ -57,5 +57,5 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board).all? {|char| char == "X" || char == "O"}
+  won?(board) == "X" || won?(board) == "O"
 end
