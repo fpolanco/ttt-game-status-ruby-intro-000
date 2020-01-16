@@ -51,13 +51,12 @@ def draw?(board)
 end
 
 def over?(board)
-  won?(board) || full?(board) 
+  won?(board) || full?(board)
 end
 
 def winner(board)
-  if won?(board) {"X"}
-    return "X"
-  elsif won?(board) {"O"}
-     return "O"
+  if combo = won?(board)
+    return board[combo[0]]
+
    end
 end
