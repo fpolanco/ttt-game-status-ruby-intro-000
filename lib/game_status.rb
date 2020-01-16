@@ -51,6 +51,7 @@ end
 
 def over?(board)
   draw?(board) == true
-  won?(board) && !full?(board) == true
+  won?(board)  == true
+  position_taken? == true
   full?(board) == true
 end
