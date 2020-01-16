@@ -56,3 +56,7 @@ def over?(board)
   won?(incomplete_board) == true
   full?(board) == true
 end
+
+def winner
+  won?(board).all? {|char| char == "X" || char == "O"}
+end
