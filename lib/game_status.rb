@@ -53,7 +53,6 @@ end
 def over?(board)
   draw?(board) == true
   won?(board)  == true
-  won?(incomplete_board) == true
   full?(board) == true
 end
 
