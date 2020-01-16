@@ -57,7 +57,7 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board).all? == "X"
+  if won?(board) == "X"
     return "X"
    if won?(board) == "O"
      return "O"
