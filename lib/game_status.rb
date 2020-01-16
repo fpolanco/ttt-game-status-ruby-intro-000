@@ -39,6 +39,7 @@ def won?(board)
 end
 
 full_board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
+incomplete_board = ["X", " ", "X", " ", "X", " ", "O", "O", "X"]
 
 def full?(board)
   board.all? {|position| position == "X" || position == "O"}
@@ -52,6 +53,6 @@ end
 def over?(board)
   draw?(board) == true
   won?(board)  == true
-  !full?(board) == true
+  won?(incomplete_board) == true
   full?(board) == true
 end
